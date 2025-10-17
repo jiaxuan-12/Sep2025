@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+
