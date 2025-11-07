@@ -1,0 +1,24 @@
+body{
+  font-size:160%;
+  text-align:center;
+}
+
+table {
+  border-collapse: collapse;
+  width:65%;height:79%;
+  background-color: #CDC0A7; 
+  padding:12px;  
+}
+
+td {
+  border:3px solid #CDC0A7 ;
+  padding:10px;
+}
+
+td:first-child {
+  padding: 8px;
+  background-color: #66774E; 
+  color: white; 
+  font-weight: bold;
+  width: 50%;
+}
