@@ -1,0 +1,66 @@
+body{
+  font-size:120%;
+  width-center:50%;
+  margin:0; 
+}
+
+div{
+  width:85%;
+  margin:auto;
+  padding:10px;
+  border:3px solid black;
+  background-color:#CCFFFF;
+}
+
+.table1,.table2 {
+  border-collapse:collapse;
+  border:3px solid black;
+  width:90%; 
+  background-color:#CCFFFF;
+  margin:20px;  
+}
+
+.table2 input,.table2 select{
+  border:none;
+  padding:10px;
+  backgound-color:#CCFFFF;
+}
+
+.table2 textarea{
+  border:none;
+  padding:20px;
+  width:65%;
+  background-color:#CCFFFF;
+}
+
+
+.table1 input{
+  border:none;
+  background-color:#CCFFFF;
+  padding:10px;
+  width:89%; 
+}
+ 
+select,textarea{
+  border:none;
+  background-color:#CCFFFF;
+}
+
+
+td:first-child,td:nth-child(3){
+  border:1px solid #CCFFFF;
+  padding:8px;
+}
+  
+td{
+  border:2px solid black;
+  padding:10px;
+}
+
+td{
+   padding:0;
+}
+
+
+
+
