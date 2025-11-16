@@ -50,6 +50,47 @@ nav ul li a:hover {
   display:block;
 }
 
+.title1{
+  font-size:18px;
+  background-color:#BA996E
+}
+
+
+.box1{
+  background-color:#798771;
+  width:100%;height:70%;
+}
+ 
+
+.table1{
+  background-color:#CDA493;
+  width:50%;
+}
+
+img{
+  display:block;
+}
+
+.table_box {
+  border-collapse: collapse;
+  width:65%;
+  background-color: #0F3A0E; 
+  padding:12px;  
+}
+
+td {
+  border:3px solid #66774E;
+  padding:10px;
+}
+
+td:first-child {
+  padding: 8px;
+  background-color: #66774E; 
+  color: white; 
+  font-weight: bold;
+  width: 30%;
+}
+
 /* =========================
    Mobile (≤ 480px)
    ========================= */
@@ -71,6 +112,7 @@ nav ul li a:hover {
   }
 
 } 
+
 
 /* =========================
    Tablet (768px – 1200px)
@@ -106,3 +148,4 @@ nav ul li a:hover {
     text-align: left;
   }
 }
+

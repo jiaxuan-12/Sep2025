@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Kairos School of Computing</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function validateForm(){
+ //to validate text-do not allow empty
+ let x=document.MyFirstForm.fname.value;
+ if(x==""){
+     alert("Please provide your Full Name!");
+   return false;
+ }
+ //to validate text-only allow contactnumbers
+ let y=document.MyFirstForm.phone_no.value
+ var contactnumbers=/^[0-9]{8,12}$/;
+ if(!y.match(contactnumbers))
+  {
+   alert("Please input number for Contact Number(8-12 digits).");
+   return false;
+ }
+ if((MyFirstForm.course[0].checked==false)&&(MyFirstForm.course[1].checked==false)&&(MyFirstForm.course[2].checked==false))
+  {
+  alert("Please choose your course!");
+  return false;
+ }
+}
+</script>
+
+</head>
+
+<body bgcolor=grey
+text=white
+background=p6.jpg>
+
+<center>
+<a name="point here"><h3>How to Apply</h3>
+
+<h3>Entry Requirements</h3>
+<table>
+<tr>
+<td>Foundation:</td>
+<td> Minimum 5 credits in SPM </td>
+</tr>
+<tr>
+<td>Diploma:</td>
+<td> Psss in SPM with 3 credits including Mathmatics and English</td>
+</tr>
+<tr>
+<td>Undergraduate:</td>
+<td> Diploma in Computer Science or Foundation in related field </td>
+</tr>
+</table>
+
+<h3>Scholarship Information</h3>
+<table>
+<tr>
+<td>SPM</td>
+<td>>90A's</td>
+<td rowspan='4'>Tuition Fees Waiver</td>
+</tr>
+<tr>
+<td>STPM or Matriculation</td>
+<td>>CGPA 3.50 </td>
+</tr>
+<tr>
+<td>UEC</td>
+<td>>6A's</td>
+</tr>
+<tr>
+<td>IGSCE / O-Level</td>
+<td>7A's</td>
+</tr>
+</table>
+
+<p>- Application for Diploma and Degree Programmes only.</p> 
+<p>- Requires maintenance of CGPA > 3.79 and attendance >80% every Semester.</p>
+
+
+
+<div class=box1>
+<h2>Tution Payment Methods</h2>
+<p>Payment via online back transfer, credit card, or at the school cashier.</P>
+<P>Back Account details</p>
+<p>Bank Name:May Bank</p>
+<p>Payee Name: Kairos Education Group Sdn.Bhd.</p>
+<P>Account no.:032 234 465 588</p>
+<br>
+
+<h2>Important Notes</h2>
+<p>After paymnet, please provide us with the following information:</p>
+<p>1. Student Name</p>
+<p>2. Student IC NO. / Passport No.</p>
+<p>3. Student ID</p>
+<p>4. Contact Number</p>
+</div>
+
+<form name=MyFirstForm onsubmit="return validateForm()">
+<div class=table_box>
+<h3>Application Form</h3>
+<table>
+<tr>
+<td width='40%'>Full Name</td>
+<td><input type=text name=fname size=20 maxlength=10></td>
+</tr>
+
+<tr>
+<td>Email address:</td>
+<td><input type=email name=email></td>
+</tr>
+
+<tr>
+<td>Contact No.: </td>
+<td><input type=number name=phone_no></td>
+</tr>
+
+<tr>
+<td>Course:</td>
+<td>
+<input type=radio name=course value=Foundation in Computing>Foundation in Computing
+<input type=radio name=course value=Diploma in Computer Scince>Diploma in Computer Scince
+<input type=radio name=course value=Bachelar of Computer Science>Bachelar of Computer Science
+</td>
+</tr>
+</table>
+
+<br><br>
+<input type=submit value=Submit>
+<input type=submit value=Reset>
+</div>
+
+
+</form>
+
+<p align=right><a href="#point here"><img src="p10.png" width=50 height=50></a></p>
+</center>
+</body>
+</html>

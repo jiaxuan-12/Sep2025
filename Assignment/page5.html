@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive Example</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function validateForm(){
+ //to validate text-do not allow empty
+ let x=document.MyFirstForm.fname.value;
+ if(x==""){
+     alert("Please provide your Full Name!");
+   return false;
+ }
+ //to validate text-only allow contactnumbers
+ let y=document.MyFirstForm.phone_no.value
+ var contactnumbers=/^[0-9]{8,12}$/;
+ if(!y.match(contactnumbers))
+  {
+   alert("Please input number for Contact Number(8-12 digits).");
+   return false;
+ }
+}
+</script>
+
+</head>
+
+<body bgcolor=grey
+text=white
+background=p4.jpg>
+<center>
+
+<h1>Contact US</h1>
+<p>Reach out to us via the form or our contact details below.</p>
+<div>
+<p><b>Address:</b> 56, Jalan Maya,Taman Tech,51521 Sungai Moi,Selangor,Malaysia</p>
+<p><b>Phone:</b>+ 6013-3284343</p>
+<p><b>Email:</b><a href="mailto:jxuan1166@gmail.com" target=_black">info@schoolofcomputing.edu</a></p>
+<p><b>Opening Hours:</b>
+<br>Monday - Friday 
+<br>9.00 am- 5.00pm
+<br>Closed On Saturday & Sunday
+</p>
+</div>
+<br><br><br>
+
+
+<h3><font color=#66774E>Contact Form</font></h3>
+<form name=MyFirstForm onsubmit="return validateForm()">
+<table>
+<tr>
+<td width='40%'>Full Name</td>
+<td><input type=text name=fname size=20 maxlength=10></td>
+</tr>
+
+<tr>
+<td>Email address:</td>
+<td><input type=email name=email></td>
+</tr>
+
+<tr>
+<td>Contact Number:</td>
+<td><input type=number name=phone_no></td>
+</tr>
+</table>
+
+<br><br>
+<input type=submit value=Submit>
+<input type=submit value=Reset>
+
+
+
+</form>
+</center>
+</body>
+</html>
