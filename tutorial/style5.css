@@ -1,0 +1,21 @@
+body{
+background-color:oldlace;
+padding:30px;
+font-size=300%;
+text-align: center;
+}
+
+h2{
+color:#BA996E;
+padding:3px;
+background:white;
+width:fit-content;
+font-family:cursive;
+font-size:160%;
+}
+
+button{
+color:#BA996E;
+border:3px solid white;
+padding:10px;
+}
