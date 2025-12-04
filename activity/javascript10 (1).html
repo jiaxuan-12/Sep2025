@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head><title>JavaScript</title>
+<link rel=icon href=sunflower.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+<script>  
+  function checknumber(){
+    var getnumber = document.getElementById("insertnumber");
+  
+    if(getnumber.value<=0){  
+      alert("Number inserted (" + getnumber.value + ") is F.");  
+    }  
+    else if ((getnumber.value>0) && (getnumber.value<=30)){
+     alert("Number inserted (" + getnumber.value + ") is D.");  
+    }
+    else if((getnumber.value>31) && (getnumber.value<=50)){
+      alert("Number inserted (" + getnumber.value + ") is C.");  
+    }
+    else if((getnumber.value>51) && (getnumber.value<=70)){
+      alert("Number inserted (" + getnumber.value + ") is B+.");  
+    }
+    else if((getnumber.value>71) && (getnumber.value<=90)){
+      alert("Number inserted (" + getnumber.value + ") is A-.");  
+    }
+    else {
+      alert("Number inserted (" + getnumber.value + ") is A+.");  
+    }
+}
+</script> </head>
+<body>
+<h1>JavaScript - If … Else</h1>
+<form>
+Insert a number&nbsp;:&nbsp;&nbsp;
+
+<input type=number name=insertnumber id=insertnumber onblur=checknumber()>
+</form>
+</body></html>
+
+
+
