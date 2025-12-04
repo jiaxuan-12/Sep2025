@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head>
+<title>JavaScript - Keyboard Events</title>
+<link rel=icon href=seagull.jpeg type=image/jpeg>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+
+<script>
+
+window.addEventListener("keypress",checkKeyPress,false);
+
+function checkKeyPress(key){
+
+  alert(key.keyCode)
+
+  if (key.keyCode == "97"){
+    alert("The'a'lower case has been pressed!")
+  }
+
+  else if (key.keyCode == "65"){
+    alert("The 'A' upper case has been pressed!")
+  }
+}
+
+</script>
+</head>
+<body>
+
+<h1>Keyboarad Events - KeyPress in JavaScript</h1>
+
+<p>keyCode:97 = a (lower case) on keyboard </p>
+
+</body>
+</html>
