@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head>
+<title>Cartoon</title>
+<link rel=icon href=seagull.jpeg type=image/jpeg>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+
+<script>
+function bigImg(x){
+  x.style.height = "300px";
+  x.style.width = "400px";
+}
+function normalImg(x){
+  x.style.height = "150px";
+  x.style.width = "220px";
+}
+</script>
+</head>
+<body>
+
+<hr size=4 color=blue width=50%>
+<h1 align=center>Introduction to Disney Cartoon Characters</h1>
+<hr size=4 color=blue width=50%>
+<br><br>
+
+<img onmouseover="bigImg(this)"
+onmouseout="normalImg(this)"
+<img src=donald_duck.jpg height=150 width=200 border=6 alt=Donald Duck align=top>
+<font color=purple size=4><b>
+Donald is know for this semi-intelligible speech and his mischieveous,
+temperamental, and pompous personality.
+</b></font>
+<br><br><br>
+<hr size=5 width=100% align=left noshade color=red>
+<img onclick="bigImg(this)"
+onmouseout="normalImg(this)"
+<img src=donald_duck.jpg height=150 width=200 border=6 alt=Donald Duck align=top>
+<font color=purple size=4><b>
+Donald is know for this semi-intelligible speech and his mischieveous,
+temperamental, and pompous personality.
+</b></font>
+<br><br><br>
+<hr size=5 width=100% align=left noshade color=red>
+<img ondblclick="bigImg(this)"
+onmouseout="normalImg(this)"
+<img src=donald_duck.jpg height=150 width=200 border=6 alt=Donald Duck align=top>
+<font color=purple size=4><b>
+Donald is know for this semi-intelligible speech and his mischieveous,
+temperamental, and pompous personality.
+</b></font>
+
+<br><br><br>
+
+</body>
+</html>
