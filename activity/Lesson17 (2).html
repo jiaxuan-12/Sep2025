@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html><head>
+<title>Lesson 17 Answer</title>
+<link rel=icon href=sunflower.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+</head>
+<body>
+
+<h1>Subject Selection Function</h1>
+
+Choose Programme: &nbsp;&nbsp;&nbsp;
+<select id="dropdownid" onchange="changesublist()">
+<option value="NULL"> - Programme List - </option>
+<option value="option1">DCS - Diploma in Computer Science</option>
+<option value="option2">DIB - Diploma in Business</option>
+<option value="option3">DAS - Diploma in Airline Studies</option>
+</select>
+<br><br>
+Subjects List: &nbsp;&nbsp;&nbsp;<font id="chkboxarea"></font>
+
+<script>
+    function changesublist() {
+        var selectedOption = document.getElementById("dropdownid").value;
+        var chkboxarea = document.getElementById("chkboxarea");
+        chkboxarea.innerHTML = "";
+  
+        switch (selectedOption) {
+            case "option1":
+                insertchkbox("DCS1003");
+                insertchkbox("DCS1303");
+                insertchkbox("DCS3003");
+                break;
+            case "option2":
+                 insertchkbox("DIB1003");
+                 insertchkbox("DIB2023");
+                 insertchkbox("DIB3023");
+                 break;
+             case "option3":
+                 insertchkbox("DAS1003");
+                 insertchkbox("DAS3003");
+                 break;
+             case "NULL":
+                break;
+            default:
+                 break;
+        } 
+    }
+  
+    function insertchkbox(chkboxtext) {
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.name = "checkbox";
+        checkbox.value = chkboxtext;
+
+        var chkboxtextElement = document.createElement("chkboxtext");
+        chkboxtextElement.appendChild(checkbox);
+        chkboxtextElement.appendChild(document.createTextNode(chkboxtext));
+
+        var chkboxarea = document.getElementById("chkboxarea");
+        chkboxarea.appendChild(chkboxtextElement);
+   }
+
+
+   changesublist();
+
+ 
+
+</script>
+</body></html>
+
+
+
