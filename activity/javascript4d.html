@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head>
+<title>JavaScript-getElementById</title>
+<link rel=icon href=seagull.jpeg type=image/jpeg>
+<meta name=viewport content=width=device-width,initial-scale=1.0>
+<script>
+     function changeContent(newContent){
+     const tochange = document.getElementById("change");
+     tochange.innerHTML=newContent;
+     }
+</script>
+</head>
+<body>
+<h1>JavaScript - innerHTML</h1>
+
+<h3 id="change">Using JavaScript innerHTML function to change ID content.</h3>
+
+<button type="button"
+onclick="changeContent('Content with specific ID to change!');">
+Change ID Content</button>
+
+</body></html>
